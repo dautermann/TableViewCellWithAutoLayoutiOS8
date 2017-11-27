@@ -65,7 +65,7 @@ class TableViewCell: UITableViewCell
             // contentView.bounds = CGRect(x: 0.0, y: 0.0, width: 99999.0, height: 99999.0)
             
             // Prevent the two UILabels from being compressed below their intrinsic content height
-            NSLayoutConstraint.autoSetPriority(UILayoutPriorityRequired) {
+            NSLayoutConstraint.autoSetPriority(UILayoutPriority.required) {
                 self.titleLabel.autoSetContentCompressionResistancePriority(for: .vertical)
                 self.bodyLabel.autoSetContentCompressionResistancePriority(for: .vertical)
             }

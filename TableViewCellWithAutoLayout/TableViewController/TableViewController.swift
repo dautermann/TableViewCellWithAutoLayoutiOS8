@@ -60,13 +60,13 @@ class TableViewController: UITableViewController
     }
     
     // This function will be called when the Dynamic Type user setting changes (from the system Settings app)
-    func contentSizeCategoryChanged(_ notification: Notification)
+    @objc func contentSizeCategoryChanged(_ notification: Notification)
     {
         tableView.reloadData()
     }
     
     // Deletes all rows in the table view and replaces the model with a new empty one
-    func clear()
+    @objc func clear()
     {
         var rowsToDelete: [IndexPath] = []
         for i in 0..<model.dataArray.count {
@@ -79,7 +79,7 @@ class TableViewController: UITableViewController
     }
     
     // Adds a single row to the table view
-    func addRow()
+    @objc func addRow()
     {
         model.addSingleItem()
         

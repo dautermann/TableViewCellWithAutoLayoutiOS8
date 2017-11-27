@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25B3AC021FCC408000AA9ECB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B3AC011FCC408000AA9ECB /* Launch Screen.storyboard */; };
 		5A3B25361945F89500838EF4 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25351945F89500838EF4 /* NibTableViewCell.swift */; };
 		5A3B25381945F8AC00838EF4 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3B25371945F8AC00838EF4 /* NibTableViewCell.xib */; };
 		65C7B47C160366D672EF8E13 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94577F57ED7FB9D3081729B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25B3AC011FCC408000AA9ECB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		57612988E552EA49095C8330 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5A3B25351945F89500838EF4 /* NibTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
 		5A3B25371945F8AC00838EF4 /* NibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				99BCDCAC18008C0000B8E66B /* TableViewCellWithAutoLayout-Info.plist */,
 				99BCDCAD18008C0000B8E66B /* InfoPlist.strings */,
 				99BCDCB218008C0000B8E66B /* TableViewCellWithAutoLayout-Prefix.pch */,
+				25B3AC011FCC408000AA9ECB /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,7 +252,7 @@
 				ORGANIZATIONNAME = smileyborg;
 				TargetAttributes = {
 					99BCDCA018008C0000B8E66B = {
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 					};
 					99BCDCBB18008C0000B8E66B = {
 						TestTargetID = 99BCDCA018008C0000B8E66B;
@@ -281,6 +284,7 @@
 			files = (
 				99BCDCAF18008C0000B8E66B /* InfoPlist.strings in Resources */,
 				5A3B25381945F8AC00838EF4 /* NibTableViewCell.xib in Resources */,
+				25B3AC021FCC408000AA9ECB /* Launch Screen.storyboard in Resources */,
 				99BCDCB718008C0000B8E66B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,13 +481,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewCellWithAutoLayout/TableViewCellWithAutoLayout-Prefix.pch";
 				INFOPLIST_FILE = "TableViewCellWithAutoLayout/TableViewCellWithAutoLayout-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smileyborg.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TableViewCellWithAutoLayout/TableViewController/TableViewCellWithAutoLayout-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,12 +503,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewCellWithAutoLayout/TableViewCellWithAutoLayout-Prefix.pch";
 				INFOPLIST_FILE = "TableViewCellWithAutoLayout/TableViewCellWithAutoLayout-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smileyborg.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TableViewCellWithAutoLayout/TableViewController/TableViewCellWithAutoLayout-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
